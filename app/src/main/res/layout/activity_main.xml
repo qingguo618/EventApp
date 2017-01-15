@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_background">
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp">
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imgvBack"
+            android:background="@drawable/bg_back" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imgvBack"
+            android:background="@drawable/bg_nav">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beek Message"
+                android:id="@+id/textView2"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white_color"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+<!--
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/top_layout"
+        android:background="@color/line_color" />
+    -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top_layout"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:scrollingCache="false" >
+
+    </ListView>
+
+    <!--
+    <TextView
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom_color" />
+-->
+</RelativeLayout>

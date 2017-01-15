@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/bg_cell"
+        android:layout_marginBottom="0dp">
+
+        <com.pkmmte.view.CircularImageView
+            android:id="@+id/picture"
+            android:layout_width="70dp"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:border="true"
+            app:border_color="#ffffff"
+            app:border_width="2dp"
+            app:shadow="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/picture"
+            android:orientation="vertical"
+            android:layout_alignTop="@+id/picture"
+            android:id="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#5aa0db"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Lorem Imspum Dolor" />
+
+            <TextView
+                android:id="@+id/txt_description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="13dp"
+                android:text="Sed ut perspiciatis unde omnis" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_distance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:text="Distance: 5.5 miles"
+            android:layout_alignLeft="@+id/linearLayout"
+            android:layout_alignBottom="@+id/picture" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageView4"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/bg_next"
+            android:layout_marginRight="10dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/bg_selector"
+        android:scaleType="fitXY" />
+
+</LinearLayout>

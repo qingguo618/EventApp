@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:fadingEdge="none"
+	    android:cacheColorHint="#00000000"
+		android:listSelector="@android:color/transparent"
+		android:scrollingCache="false">
+
+    </ListView>
+
+</LinearLayout>

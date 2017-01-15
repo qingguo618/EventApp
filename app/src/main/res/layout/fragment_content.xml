@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_background">
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp">
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imgvBack"
+            android:background="@drawable/bg_back" />
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/imgvEdit"
+            android:src="@drawable/bg_edit"
+            android:layout_alignParentEnd="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imgvBack"
+            android:background="@drawable/bg_nav"
+            android:layout_toLeftOf="@+id/imgvEdit">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beek Message"
+                android:id="@+id/textView2"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white_color"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <com.pkmmte.view.CircularImageView
+            android:id="@+id/picture"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/logo"
+            android:scaleType="fitXY"
+            app:border="true"
+            app:border_color="#ffffff"
+            app:border_width="2dp"
+            app:shadow="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout"
+            android:layout_toRightOf="@+id/picture"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@+id/picture">
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#5aa0db"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Lorem Imspum Dolor" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtDistance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:text="Distance: 5.5 miles"
+            android:layout_alignLeft="@+id/linearLayout"
+            android:layout_alignBottom="@+id/picture" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="4dp"
+        android:id="@+id/imageView5"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/bg_selector"
+        android:scaleType="fitXY" />
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/webView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_cell"
+        android:layout_marginBottom="12dp" />
+</LinearLayout>
